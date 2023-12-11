@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Header() {
-  // an example of an inline style for the nav tag for an initial layout
+  //an example of an inline style for the nav tag for an initial layout - later additions, or
 
   const navStyle = {
     display: "flex",
@@ -16,9 +16,15 @@ function Header() {
     <header>
       <h1>My Portfolio Page</h1>
       <nav style={navStyle}>
-        <Link to="/">HOME</Link>
-        <Link to="/projects">PROJECTS</Link>
-        <Link to="/about">ABOUT</Link>
+        <Link to="/">
+          <div>HOME</div>
+        </Link>
+        <Link to="/about">
+          <div>ABOUT</div>
+        </Link>
+        <Link to="/projects">
+          <div>PROJECTS</div>
+        </Link>
       </nav>
     </header>
   );

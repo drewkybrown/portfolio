@@ -1,0 +1,116 @@
+/* Email sidebar styling */
+.email-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 200px; /* Adjust width as necessary */
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.email-container {
+  writing-mode: vertical-rl; /* Display text vertically */
+  transform: rotate(0deg); /* Rotate text to display from bottom to top */
+  text-align: center; /* Center the text */
+}
+
+.email-container a {
+  color: #fff;
+  text-decoration: none;
+  word-break: break-all; /* Break the email address if it's too long */
+}
+
+/* Sidebar styling */
+.sidebar {
+  display: column;
+  top: 0;
+  left: 0;
+  width: 130px;
+  background-color: #63bbe7;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the links */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Style the links on hover */
+.sidebar a:hover {
+  color: #00f;
+}
+
+/* Style the logos */
+.sidebar img {
+  max-width: 100px;
+  display: block;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%; /* Make logos circular */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Style individual logos */
+.sidebar img[src*="github-mark"] {
+  border-color: #333; /* Change border color for GitHub logo */
+}
+
+/* src/styles/components.css */
+
+/* Style for the entire header */
+.header-container {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* Style for the navigation links */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.2rem solid black;
+  padding: 0.5rem;
+  width: 90%;
+  margin: auto;
+}
+
+/* Style for individual navigation links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+/* Style for the Resume button */
+.resume-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}

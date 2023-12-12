@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "../styles/components.css"; // Import the CSS file
 
 function ResumeButton() {
@@ -8,7 +7,7 @@ function ResumeButton() {
       href="/resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
-      className="btn btn-outline-primary resume-button" // Bootstrap button class
+      className="custom-resume-button btn-outline-primary" // Add 'custom-resume-button'
     >
       <div>Resume</div>
     </a>

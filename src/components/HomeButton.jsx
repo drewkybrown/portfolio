@@ -5,7 +5,7 @@ import "../styles/components.css"; // Import the CSS file for additional styling
 
 function HomeButton() {
   return (
-    <Link to="/" className="btn btn-outline-primary home-button">
+    <Link to="/" className="home-button btn-outline-primary home-button">
       Home
     </Link>
   );

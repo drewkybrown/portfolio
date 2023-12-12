@@ -15,6 +15,55 @@ html {
   height: auto; /* Maintain aspect ratio */
 }
 
+/* Custom styles for the GitHub logo with "jump out" effect and shadow */
+#github-logo {
+  max-width: 40px; /* Limit image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between icons */
+  transition: transform 0.5s, box-shadow 0.2s, filter 0.2s;
+  filter: grayscale(100%); /* Initial grayscale effect (black and white) */
+}
+
+/* Apply styles on hover */
+#github-logo:hover {
+  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  filter: grayscale(100%); /* Remove grayscale effect on hover (colorize) */
+}
+
+/* Custom styles for the Twitter logo with "jump out" effect and shadow */
+#twitter-logo {
+  max-width: 40px; /* Limit image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between icons */
+  transition: transform 0.5s, box-shadow 0.2s, filter 0.2s;
+  filter: grayscale(100%); /* Initial grayscale effect (black and white) */
+}
+
+/* Apply styles on hover */
+#twitter-logo:hover {
+  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  filter: grayscale(100%); /* Remove grayscale effect on hover (colorize) */
+}
+
+/* Custom styles for the LinkedIn logo with "jump out" effect and shadow */
+/* Custom styles for the LinkedIn logo with "jump out" effect and shadow */
+#linkedin-logo {
+  max-width: 40px; /* Limit image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between icons */
+  transition: transform 0.5s, box-shadow 0.2s, filter 0.2s;
+  filter: grayscale(100%); /* Initial grayscale effect (black and white) */
+}
+
+/* Apply styles on hover */
+#linkedin-logo:hover {
+  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  filter: grayscale(100%); /* Remove grayscale effect on hover (colorize) */
+}
+
 .sidebar {
   position: fixed; /* Fixed position */
   top: 0; /* Align to the top */
@@ -43,7 +92,7 @@ html {
   color: #0a192f;
   font-weight: bold;
   font-size: 18px;
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  transition: color 0.5s ease; /* Smooth color transition on hover */
 }
 
 /* Style the links on hover */

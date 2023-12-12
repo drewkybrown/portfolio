@@ -15,7 +15,6 @@
 .email-container {
   writing-mode: vertical-rl; /* Display text vertically */
   position: fixed;
-
   text-align: center; /* Center the text */
   background-color: #0a192f;
 }
@@ -23,10 +22,12 @@
 .email-container a {
   text-decoration: none;
   word-break: break-all; /* Break the email address if it's too long */
+  color: white; /* Set the default text color */
+  transition: transform 0.5s; /* Add a transform transition for the "hover 3D effect" */
 }
 
-.email-text-custom {
-  color: white;
+.email-container a:hover {
+  transform: translateY(-5px) scale(1.1); /* Apply the "hover 3D effect" on hover */
 }
 
 /* Style for the entire header */
@@ -62,34 +63,46 @@
   background-color: #f8f8f9; /* Light grey background on hover */
 }
 
-/* Custom styles for the "Home" button */
+/* Custom styles for the "Home" button with "jump out" effect and shadow */
 .home-button {
   position: absolute;
   top: 20px;
   left: 80px;
   padding: 10px; /* Add padding for spacing */
-  background-color: #007bff; /* Customize the button background color */
+  background-color: #4e83bc; /* Customize the button background color */
   color: #fff; /* Customize the button text color */
   border: 1px solid #007bff; /* Add a border around the button */
   border-radius: 10px; /* Add border radius for rounded corners */
   cursor: pointer; /* Change cursor on hover */
   text-decoration: none; /* Remove underline */
+  transition: transform 0.5s, box-shadow 0.2s, background-color 0.2s;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Initial box shadow (none) */
 }
 
-/* Style for the Resume button */
-.resume-button {
+.home-button:hover {
+  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Custom styles for the "Resume" button with "jump out" effect and shadow */
+.custom-resume-button {
   position: absolute;
   top: 20px;
   right: 80px;
-  padding: 10px; /* Add padding for spacing */
-  background-color: #007bff; /* Customize the button background color */
-  color: #fff; /* Customize the button text color */
-  border: 1px solid #007bff; /* Add a border around the button */
-  border-radius: 10px; /* Add border radius for rounded corners */
-  cursor: pointer; /* Change cursor on hover */
-  text-decoration: none; /* Remove underline */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s, box-shadow 0.2s, background-color 0.2s;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Initial box shadow (none) */
 }
 
-.resume-button:hover {
-  background-color: #b93364;
+.custom-resume-button:hover {
+  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  background-color: #0056b3; /* Change background color on hover */
 }

@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import EmailSidebar from "./components/EmailSidebar";
+import HomeButton from "./components/HomeButton";
 
 // Import pages
 import Home from "./pages/Home";
@@ -15,6 +16,7 @@ import Projects from "./pages/Projects";
 function App() {
   return (
     <div className="App">
+      <HomeButton />
       <Header />
       <EmailSidebar />
       <Routes>

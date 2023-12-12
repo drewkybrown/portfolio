@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
+import EmailSidebar from "./components/EmailSidebar";
 
 // IMPORT PAGES
 import Home from "./pages/Home";
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <EmailSidebar /> {/* Add this line */}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

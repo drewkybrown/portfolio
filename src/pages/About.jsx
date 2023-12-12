@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
 
 function About() {
-  // create state to hold about data
+  // Create state to hold about data
   const [about, setAbout] = useState(null);
 
-  // create function to make api call
+  // Create function to make API call
   const getAboutData = async () => {
-    // make api call and get response
+    // Make API call and get response
     const response = await fetch("./about.json");
 
-    // turn response into javascript object
+    // Turn response into JavaScript object
     const data = await response.json();
 
-    // set the about state to the data
+    // Set the about state to the data
     setAbout(data);
   };
 
-  // make an initial call for the data inside a useEffect, so it only happens once on component load
+  // Make an initial call for the data inside a useEffect, so it only happens once on component load
   useEffect(() => {
     getAboutData();
   }, []);
@@ -25,14 +25,11 @@ function About() {
   const loaded = () => (
     <div>
       <h2>{about.name}</h2>
-      <p>
-        <a href={about.email}>{about.email.replace("mailto:", "")}</a>
-      </p>
       <p>{about.bio}</p>
     </div>
   );
 
-  // if data arrives return the result of loaded, if not, an h1 that says loading
+  // If data arrives, return the result of loaded; if not, display "Loading..."
   return about ? loaded() : <h1>Loading...</h1>;
 }
 

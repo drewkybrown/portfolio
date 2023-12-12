@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/components.css"; // Import the CSS file
 
@@ -35,14 +36,6 @@ function Header() {
                     </Link>
                   </li>
                 </ul>
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-primary" // Bootstrap button class
-                >
-                  <div>Resume</div>
-                </a>
               </div>
             </nav>
           </div>

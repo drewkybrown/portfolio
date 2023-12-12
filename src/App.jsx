@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import EmailSidebar from "./components/EmailSidebar";
 import HomeButton from "./components/HomeButton";
+import ResumeButton from "./components/ResumeButton";
 
 // Import pages
 import Home from "./pages/Home";
@@ -16,6 +17,7 @@ import Projects from "./pages/Projects";
 function App() {
   return (
     <div className="App">
+      <ResumeButton />
       <HomeButton />
       <Header />
       <EmailSidebar />

@@ -1,4 +1,7 @@
 // src/pages/Home.jsx
+import "../styles/pages.css";
+
+// function to render the Home page
 function Home(props) {
   return (
     <div className="intro">

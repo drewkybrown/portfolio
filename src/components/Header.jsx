@@ -1,28 +1,25 @@
 import { Link } from "react-router-dom";
+import "../styles/components.css"; // Import the CSS file
 
 function Header() {
-  const navStyle = {
-    display: "flex",
-    justifyContent: "space-around",
-    borderBottom: ".2rem solid black",
-    padding: ".5rem",
-    width: "90%",
-    margin: "auto",
-  };
-
   return (
-    <header>
-      <nav style={navStyle}>
-        <Link to="/">
+    <header className="header-container">
+      {" "}
+      {/* Apply the CSS class */}
+      <nav className="nav-container">
+        <Link to="/" className="nav-link">
+          {" "}
           <div>D</div>
         </Link>
-        <Link to="/about">
+        <Link to="/about" className="nav-link">
+          {" "}
           <div>01. About</div>
         </Link>
-        <Link to="/projects">
+        <Link to="/projects" className="nav-link">
+          {" "}
           <div>02. Projects</div>
         </Link>
-        {/* Resume Link */}
+
         <a
           href="/resume.pdf"
           target="_blank"

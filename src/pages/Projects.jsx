@@ -1,4 +1,5 @@
 // src/pages/Projects.jsx
+import "../styles/pages.css";
 import { useState, useEffect } from "react";
 
 function Projects(props) {

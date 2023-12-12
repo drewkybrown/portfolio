@@ -1,4 +1,5 @@
 // src/pages/About.jsx
+import "../styles/pages.css";
 import { useState, useEffect } from "react";
 
 function About() {

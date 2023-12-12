@@ -1,6 +1,7 @@
 // main.jsx
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./styles.css";
+import "./styles/components.css";
 import App from "./App.jsx";
 import { HashRouter as Router } from "react-router-dom"; // Import HashRouter
 

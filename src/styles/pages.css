@@ -4,7 +4,7 @@
 
 .home-container {
   /* Add custom container styles here */
-  background-color: white;
+  background-color: #0a192f;
   padding: 20px;
   border-radius: 5px;
 }
@@ -30,9 +30,10 @@
 /* Container styles */
 .custom-about-container {
   /* Add custom container styles here */
-  background-color: white;
+  background-color: #0a192f;
   padding: 20px;
   border-radius: 5px;
+  color: white;
 }
 
 /* Heading styles "About Me" */
@@ -52,7 +53,7 @@
 /* List item styles for skills */
 .custom-list-item {
   /* Add custom list item styles here */
-  color: #dbe0e7;
+  color: #f3f5fa;
 }
 
 /* Icon styles for skills items */

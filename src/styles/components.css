@@ -1,13 +1,12 @@
 /* Email sidebar styling */
+
 .email-sidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 60px; /* Adjust width as necessary */
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #0a192f;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center items horizontally */
@@ -15,21 +14,27 @@
 
 .email-container {
   writing-mode: vertical-rl; /* Display text vertically */
-  transform: rotate(0deg); /* Rotate text to display from bottom to top */
+  position: fixed;
+
   text-align: center; /* Center the text */
+  background-color: #0a192f;
 }
 
 .email-container a {
-  color: #fff;
   text-decoration: none;
   word-break: break-all; /* Break the email address if it's too long */
 }
 
+.email-text-custom {
+  color: white;
+}
+
 /* Style for the entire header */
 .header-container {
-  background-color: white; /* Light grey background */
-  padding: 10px; /* Padding around the header */
+  background-color: #0a192f; /* Light grey background */ /* Padding around the header */
+  color: white;
 }
+/* email text styling */
 
 .nav-box {
   display: flex; /* Flexbox layout */

@@ -21,12 +21,11 @@ html {
   left: 0; /* Align to the left */
   width: 60px; /* Set a fixed width */
   height: 100vh; /* Full viewport height */
-  background-color: #f8f9fa; /* Light background, change as needed */
+  background-color: #0a192f; /* Light background, change as needed */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #dee2e6; /* Right border for a distinct sidebar */
 }
 
 /* Style the links */
@@ -41,7 +40,7 @@ html {
 
 .sidebar a {
   text-decoration: none;
-  color: #fff;
+  color: #0a192f;
   font-weight: bold;
   font-size: 18px;
   transition: color 0.3s ease; /* Smooth color transition on hover */
@@ -61,5 +60,5 @@ html {
 
 /* Style individual logos */
 .sidebar img[src*="github-mark"] {
-  border-color: #333; /* Change border color for GitHub logo */
+  border-color: #f5f0f0; /* Change border color for GitHub logo */
 }

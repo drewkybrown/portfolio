@@ -2,35 +2,51 @@
 import { useState, useEffect } from "react";
 
 function About() {
-  // Create state to hold about data
+  // State to hold the about data
   const [about, setAbout] = useState(null);
 
-  // Create function to make API call
+  // Function to fetch about data from JSON file
   const getAboutData = async () => {
-    // Make API call and get response
+    // Fetch data from the about.json file
     const response = await fetch("./about.json");
-
-    // Turn response into JavaScript object
+    // Convert response to JSON
     const data = await response.json();
-
-    // Set the about state to the data
+    // Update state with fetched data
     setAbout(data);
   };
 
-  // Make an initial call for the data inside a useEffect, so it only happens once on component load
+  // useEffect to call getAboutData on component mount
   useEffect(() => {
     getAboutData();
   }, []);
 
-  // Define a function that will return the JSX needed once we get the data
+  // Function to render the content once data is loaded
   const loaded = () => (
     <div>
       <h2>{about.name}</h2>
-      <p>{about.bio}</p>
+      {/* Loop through the bio array and render each item */}
+      {about.bio.map((text, index) => {
+        // Check if the text is a list item (starts with '-')
+        if (text.startsWith("-")) {
+          // Render as list item
+          return (
+            <li key={index} className="bio-list-item">
+              {text.substring(1).trim()}
+            </li>
+          );
+        } else {
+          // Render as paragraph
+          return (
+            <p key={index} className="bio-paragraph">
+              {text}
+            </p>
+          );
+        }
+      })}
     </div>
   );
 
-  // If data arrives, return the result of loaded; if not, display "Loading..."
+  // Render loaded content if data is available, otherwise show loading message
   return about ? loaded() : <h1>Loading...</h1>;
 }
 

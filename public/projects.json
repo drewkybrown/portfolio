@@ -1,14 +1,21 @@
 [
     {
-      "name": "project1",
-      "live": "https://app.herokuapp.com/whatever",
-      "git": "http://www.github.com/username/reponame",
-      "image": "http://www.imgur.com/pictureofproject.png"
+      "name": "Animal Kingdom",
+      "live": "https://animalkingdom-67bef32faf2a.herokuapp.com/",
+      "git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
+      "image": "/Animal-kingdom.png"
     },
     {
-      "name": "project2",
-      "live": "https://app.netlify.app/whatever",
-      "git": "http://www.github.com/username/reponame",
-      "image": "http://www.imgur.com/pictureofproject.png"
+      "name": "History Trivia Challenge",
+      "live": "https://drewkybrown.github.io/Trivia-Game/",
+      "git": "https://github.com/drewkybrown/Trivia-Game",
+      "image": "/Wireframe.trivia.png"
+    },
+
+    {
+      "name": "History Trivia Challenge",
+      "live": "https://drewkybrown.github.io/Trivia-Game/",
+      "git": "https://github.com/drewkybrown/Trivia-Game",
+      "image": "/Wireframe.trivia.png"
     }
   ]

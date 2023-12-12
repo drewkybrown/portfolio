@@ -3,10 +3,10 @@ import "../styles/pages.css";
 import { useState, useEffect } from "react";
 
 function Projects(props) {
-  // create state to hold projects
+  // Create state to hold projects
   const [projects, setProjects] = useState(null);
 
-  // make an initial call for the data inside a useEffect, so it only happens once on component load
+  // Make an initial call for the data inside a useEffect, so it only happens once on component load
   useEffect(() => {
     // Define an async function to make the API call
     const fetchData = async () => {
@@ -17,13 +17,15 @@ function Projects(props) {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        // Turn response into JavaScript object
+        // Turn response into a JavaScript object
         const data = await response.json();
         // Set the projects state to the data
         setProjects(data);
       } catch (error) {
         // If there's an error, log it to the console
         console.error("Fetch error:", error);
+        // Optionally, you can set an empty array as a fallback value
+        setProjects([]);
       }
     };
 
@@ -35,7 +37,6 @@ function Projects(props) {
   const loaded = () => {
     return projects.map((project, index) => (
       <div key={index}>
-        {" "}
         {/* Use a unique key for each item */}
         <h1>{project.name}</h1>
         <img src={project.image} alt={project.name} />

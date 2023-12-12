@@ -1,46 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/components.css"; // Import the CSS file
+import "../styles/components.css"; // Ensure the path is correct
 
 function Header() {
   return (
-    <header className="header-container mb-4">
-      {/* Bootstrap margin bottom class */}
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col">
-            {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              {/* Bootstrap navbar classes */}
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <Link to="/about" className="nav-link">
-                      <div>01. About</div>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/projects" className="nav-link">
-                      <div>02. Projects</div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+    <header className="header-container">
+      <nav className="nav-box">
+        <div className="nav-items-container">
+          <div className="nav-item">
+            <Link to="/about" className="nav-link">
+              01. About
+            </Link>
           </div>
+          <div className="nav-item">
+            <Link to="/projects" className="nav-link">
+              02. Projects
+            </Link>
+          </div>
+          {/* Add more nav-items here as needed */}
         </div>
-      </div>
+        {/* Additional items can be added here */}
+      </nav>
     </header>
   );
 }

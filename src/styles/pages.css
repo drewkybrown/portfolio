@@ -4,7 +4,7 @@
 
 .home-container {
   /* Add custom container styles here */
-  background-color: #770808;
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
 }
@@ -12,7 +12,7 @@
 .home-heading {
   /* Add custom heading styles here */
   font-size: 28px;
-  color: #0a9f2d;
+  color: #0b0fdb;
   text-align: center;
 }
 
@@ -30,7 +30,7 @@
 /* Container styles */
 .custom-about-container {
   /* Add custom container styles here */
-  background-color: #770808;
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
 }
@@ -65,4 +65,12 @@
 .custom-paragraph {
   /* Add custom paragraph styles here */
   line-height: 3.5; /* Add line height for spacing */
+}
+
+/* Styling for the projects page */
+
+.card-img-top {
+  /* Add custom card image styles here */
+  height: 200px;
+  object-fit: cover;
 }

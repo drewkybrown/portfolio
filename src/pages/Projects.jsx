@@ -1,56 +1,57 @@
-// src/pages/Projects.jsx
 import "../styles/pages.css";
 import { useState, useEffect } from "react";
 
 function Projects(props) {
-  // Create state to hold projects
   const [projects, setProjects] = useState(null);
 
-  // Make an initial call for the data inside a useEffect, so it only happens once on component load
   useEffect(() => {
-    // Define an async function to make the API call
     const fetchData = async () => {
       try {
-        // Make API call and get response
         const response = await fetch("/projects.json");
-        // If the response is not okay, throw an error
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        // Turn response into a JavaScript object
         const data = await response.json();
-        // Set the projects state to the data
         setProjects(data);
       } catch (error) {
-        // If there's an error, log it to the console
         console.error("Fetch error:", error);
-        // Optionally, you can set an empty array as a fallback value
         setProjects([]);
       }
     };
 
-    // Call the fetchData function
     fetchData();
   }, []);
 
-  // Define a function that will return the JSX needed once we get the data
   const loaded = () => {
-    return projects.map((project, index) => (
-      <div key={index}>
-        {/* Use a unique key for each item */}
-        <h1>{project.name}</h1>
-        <img src={project.image} alt={project.name} />
-        <a href={project.git}>
-          <button>Github</button>
-        </a>
-        <a href={project.live}>
-          <button>Live Site</button>
-        </a>
+    return (
+      <div className="container mt-5">
+        <div className="row">
+          {projects.map((project, index) => (
+            <div key={index} className="col-md-4 mb-4">
+              <div className="card">
+                <img
+                  src={project.image}
+                  className="card-img-top"
+                  alt={project.name}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{project.name}</h5>
+                  <p className="card-text">{project.description}</p>
+                  <a href={project.git} className="btn btn-primary">
+                    Github
+                  </a>
+                  <a href={project.live} className="btn btn-secondary">
+                    Live Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    ));
+    );
   };
 
-  // Render the loaded projects or a loading message
   return projects ? loaded() : <h1>Loading...</h1>;
 }
 

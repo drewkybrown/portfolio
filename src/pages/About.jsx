@@ -3,52 +3,47 @@ import "../styles/pages.css";
 import { useState, useEffect } from "react";
 
 function About() {
-  // State to hold the about data
+  // state for storing about data
   const [about, setAbout] = useState(null);
 
-  // Function to fetch about data from JSON file
+  // function to fetch about data
   const getAboutData = async () => {
-    // Fetch data from the about.json file
     const response = await fetch("./about.json");
-    // Convert response to JSON
     const data = await response.json();
-    // Update state with fetched data
     setAbout(data);
   };
 
-  // useEffect to call getAboutData on component mount
+  // fetch about data on initial render
   useEffect(() => {
     getAboutData();
   }, []);
 
-  // Function to render the content once data is loaded
+  // Function to render the About page
   const loaded = () => (
-    <div>
-      <h2>{about.name}</h2>
-      {/* Loop through the bio array and render each item */}
-      {about.bio.map((text, index) => {
-        // Check if the text is a list item (starts with '-')
-        if (text.startsWith("-")) {
-          // Render as list item
-          return (
-            <li key={index} className="bio-list-item">
-              {text.substring(1).trim()}
-            </li>
-          );
-        } else {
-          // Render as paragraph
-          return (
-            <p key={index} className="bio-paragraph">
-              {text}
-            </p>
-          );
-        }
-      })}
+    <div className="container mt-5 custom-about-container">
+      <div className="row justify-content-center">
+        <div className="col-lg-8">
+          <h2 className="mb-4 custom-heading">{about.name}</h2>
+          {about.bio.map((text, index) => {
+            return text.startsWith("-") ? (
+              <ul key={index} className="list-unstyled custom-list">
+                <li className="mb-2 custom-list-item">
+                  <i className="bi bi-check-circle-fill text-primary me-2 custom-icon"></i>
+                  {text.substring(1).trim()}
+                </li>
+              </ul>
+            ) : (
+              <p key={index} className="mb-3 custom-paragraph">
+                {text}
+              </p>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 
-  // Render loaded content if data is available, otherwise show loading message
-  return about ? loaded() : <h1>Loading...</h1>;
+  return about ? loaded() : <h1 className="text-center mt-5">Loading...</h1>; // conditional rendering of loaded() or loading...
 }
 
 export default About;

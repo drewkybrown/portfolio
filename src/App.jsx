@@ -1,4 +1,5 @@
 // import components
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -18,7 +19,6 @@ function App() {
       <EmailSidebar />
       <Routes>
         {" "}
-        {/* Wrap your routes in a Routes component */}
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />

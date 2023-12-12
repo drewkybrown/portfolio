@@ -2,36 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Replace the existing favicon reference with the new image -->
-    <link rel="icon" type="image/png" href="/portfolio.logo.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/src/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <!-- Updated path -->
+    <!-- Include Bootstrap CSS from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+k9VaTl7cFv5p4jFLFv6P5f5Xp"
+      crossorigin="anonymous"
+    />
     <title>Drew Brown</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Sidebar with social links -->
     <div class="sidebar">
-      <!--Links to my socials-->
-      <ul>
-        <li>
-          <a href="https://github.com/drewkybrown"
-            ><img src="github-mark.png" alt="GitHub Logo"
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://twitter.com/drewkybrown"
-            ><img src="/logo-black.png" alt="Twitter Logo"
-          /></a>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/brown-k-andrew/"
-            ><img src="Linkedin.png" alt="Linkedin Logo"
-          /></a>
-        </li>
-      </ul>
+      <a href="https://github.com/drewkybrown">
+        <img src="github-mark.png" alt="GitHub Logo" class="img-fluid" />
+      </a>
+      <a href="https://twitter.com/drewkybrown">
+        <img src="/logo-black.png" alt="Twitter Logo" class="img-fluid" />
+      </a>
+      <a href="https://www.linkedin.com/in/brown-k-andrew/">
+        <img src="Linkedin.png" alt="Linkedin Logo" class="img-fluid" />
+      </a>
     </div>
+
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

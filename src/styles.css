@@ -20,3 +20,58 @@ h1 {
   font-size: 36px;
   margin: 20px 0;
 }
+
+/* styles.css */
+.nav-link img {
+  max-width: 40px; /* Adjust this value as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sidebar {
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 60px; /* Set a fixed width */
+  height: 100vh; /* Full viewport height */
+  background-color: #f8f9fa; /* Light background, change as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #dee2e6; /* Right border for a distinct sidebar */
+}
+
+/* Style the links */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Style the links on hover */
+.sidebar a:hover {
+  color: #00f;
+}
+
+/* Style the logos */
+.sidebar img {
+  max-width: 40px; /* Limit image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between icons */
+}
+
+/* Style individual logos */
+.sidebar img[src*="github-mark"] {
+  border-color: #333; /* Change border color for GitHub logo */
+}

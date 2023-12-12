@@ -29,10 +29,6 @@
   margin-top: 20px;
 }
 
-/* About Page Syling */
-
-/* src/styles/pages.css */
-
 /* Styling for paragraphs in the bio section */
 .bio-paragraph {
   font-size: 16px;
@@ -52,7 +48,7 @@
 }
 
 /* Styling for the main heading on the About page */
-/h2 {
+h2 {
   text-align: center;
   font-size: 32px;
   color: #333;
@@ -60,3 +56,46 @@
 }
 
 /* Projects Page Syling */
+
+/* About.css */
+
+/* Container styles */
+.custom-about-container {
+  /* Add custom container styles here */
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Heading styles */
+.custom-heading {
+  /* Add custom heading styles here */
+  font-size: 28px;
+  color: #333;
+}
+
+/* List styles */
+.custom-list {
+  /* Add custom list styles here */
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* List item styles */
+.custom-list-item {
+  /* Add custom list item styles here */
+  color: #007bff;
+}
+
+/* Icon styles */
+.custom-icon {
+  /* Add custom icon styles here */
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Paragraph styles */
+.custom-paragraph {
+  /* Add custom paragraph styles here */
+  line-height: 1.5;
+}

@@ -14,7 +14,7 @@ function Header() {
     <header>
       <nav style={navStyle}>
         <Link to="/">
-          <div>HOME</div>
+          <div>D</div>
         </Link>
         <Link to="/about">
           <div>01. About</div>

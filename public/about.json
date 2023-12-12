@@ -1,6 +1,17 @@
 {
-    "name": "Drew Brown",
-    "email": "mailto:andrew.brown.devs@gmail.com",
-    "headshot": "http://www.imgur.com/pictureofproject.png",
-    "bio": "Bob Smith graduated from General Assembly in 2017. Afterwords, he went to work for XYZ Technologies where he maintained a full-stack application using Meteor and Ember. He also recently started learning Prolog, cause why not waste time."
-  }
+  "name": "01. About Me",
+  "email": "mailto:andrew.brown.devs@gmail.com",
+  "headshot": "http://www.imgur.com/pictureofproject.png",
+  "bio": [
+    "Hey there, I'm Drew, and I'm passionate about bringing digital dreams to life on the web. My journey into the world of web development ignited in 2021 when I embarked on the exciting challenge of creating a website for a local family business in my community. Little did I know that this venture would be my gateway into the enchanting world of HTML and CSS!",
+    "Fast forward to today, and I've taken my passion to new heights by attending a rigorous software engineering Bootcamp at General Assembly. This immersive experience equipped me with the skills and knowledge to craft digital experiences.",
+    "Here are some of the technologies I've been working with:",
+    "- JavaScript",
+    "- Python",
+    "- React",
+    "- Express",
+    "- Node.js",
+    "- Bootstrap",
+    "Now, as I continue to explore the ever-evolving landscape of web development, I'm excited to embrace new challenges and push the boundaries of what's possible on the internet. Join me on this digital adventure, and let's turn ideas into reality together!"
+  ]
+}

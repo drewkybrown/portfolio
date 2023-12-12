@@ -21,11 +21,13 @@ function About() {
     getAboutData();
   }, []);
 
-  // define a function that will return the JSX needed once we get the data
+  // Define a function that will return the JSX needed once we get the data
   const loaded = () => (
     <div>
       <h2>{about.name}</h2>
-      <h3>{about.email}</h3>
+      <p>
+        <a href={about.email}>{about.email.replace("mailto:", "")}</a>
+      </p>
       <p>{about.bio}</p>
     </div>
   );

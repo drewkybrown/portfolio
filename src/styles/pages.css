@@ -1,97 +1,68 @@
 /* src/styles/pages.css */
 
 /* Home Page Syling */
-.intro {
-  padding: 20px;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 800px;
-}
-/* Styling for the main heading on the Home page */
-.greeting {
-  font-size: 20px;
-  color: #555;
-  margin-bottom: 5px;
-}
 
-.name {
-  font-size: 36px;
-  color: #222;
-  margin: 0;
-}
-
-.description {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  margin-top: 20px;
-}
-
-/* Styling for paragraphs in the bio section */
-.bio-paragraph {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-/* Styling for list items in the bio section */
-.bio-list-item {
-  font-size: 16px;
-  list-style-type: disc;
-  list-style-position: inside;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-/* Styling for the main heading on the About page */
-h2 {
-  text-align: center;
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Container styles */
-.custom-about-container {
+.home-container {
   /* Add custom container styles here */
-  background-color: #f7f7f7;
+  background-color: #770808;
   padding: 20px;
   border-radius: 5px;
 }
 
-/* Heading styles */
+.home-heading {
+  /* Add custom heading styles here */
+  font-size: 28px;
+  color: #0a9f2d;
+  text-align: center;
+}
+
+.home-paragraph {
+  /* Add custom paragraph styles here */
+  line-height: 2; /* Add line height for spacing */
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+/* Styling for the main heading on the About page */
+/* Styling for ABOUT page */
+
+/* Container styles */
+.custom-about-container {
+  /* Add custom container styles here */
+  background-color: #770808;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Heading styles "About Me" */
 .custom-heading {
   /* Add custom heading styles here */
   font-size: 28px;
-  color: #333;
+  color: #0a9f2d;
 }
 
-/* List styles */
+/* List styles for skills row*/
 .custom-list {
   /* Add custom list styles here */
   list-style-type: disc;
   margin-left: 20px;
 }
 
-/* List item styles */
+/* List item styles for skills */
 .custom-list-item {
   /* Add custom list item styles here */
-  color: #007bff;
+  color: #dbe0e7;
 }
 
-/* Icon styles */
+/* Icon styles for skills items */
 .custom-icon {
   /* Add custom icon styles here */
-  font-size: 20px;
-  color: #007bff;
+  font-size: 50px;
 }
 
 /* Paragraph styles */
 .custom-paragraph {
   /* Add custom paragraph styles here */
-  line-height: 1.5;
+  line-height: 3.5; /* Add line height for spacing */
 }

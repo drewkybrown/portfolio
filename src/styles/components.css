@@ -30,14 +30,14 @@
   position: relative;
   top: 0;
   left: 0;
-  background-color: #760b0b;
-  color: white;
+  background-color: #6d0909;
+
   padding: 10px;
 }
 
 /* Style for individual navigation links */
 .nav-link {
-  color: white;
+  color: rgb(17, 14, 236);
   text-decoration: none;
   margin: 0 1rem;
   font-weight: bold;

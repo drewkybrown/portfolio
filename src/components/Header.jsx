@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Header() {
-  //an example of an inline style for the nav tag for an initial layout - later additions, or
-
   const navStyle = {
     display: "flex",
     justifyContent: "space-around",
@@ -14,7 +12,6 @@ function Header() {
 
   return (
     <header>
-      <h1>My Portfolio Page</h1>
       <nav style={navStyle}>
         <Link to="/">
           <div>HOME</div>
@@ -25,6 +22,15 @@ function Header() {
         <Link to="/projects">
           <div>02. Projects</div>
         </Link>
+        {/* Resume Link */}
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-button"
+        >
+          <div>Resume</div>
+        </a>
       </nav>
     </header>
   );

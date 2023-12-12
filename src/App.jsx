@@ -1,23 +1,25 @@
+// import components
 import "./App.css";
-
-// IMPORT COMPONENTS
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Route, Routes } from "react-router-dom";
 import EmailSidebar from "./components/EmailSidebar";
 
-// IMPORT PAGES
+// Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 
+// function for App
 function App() {
   return (
     <div className="App">
       <Header />
-      <EmailSidebar /> {/* Add this line */}
+      <EmailSidebar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        {" "}
+        {/* Wrap your routes in a Routes component */}
+        <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
       </Routes>

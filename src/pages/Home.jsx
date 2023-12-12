@@ -1,3 +1,4 @@
+// src/pages/Home.jsx
 function Home(props) {
   return (
     <div className="intro">

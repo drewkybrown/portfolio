@@ -21,7 +21,7 @@ h1 {
 
 /* Sidebar styling */
 .sidebar {
-  position: fixed;
+  display: column;
   top: 0;
   left: 0;
   width: 130px;
@@ -77,24 +77,29 @@ h1 {
 }
 
 /* Email sidebar styling */
+/* Email sidebar styling */
 .email-sidebar {
   position: fixed;
   top: 0;
   right: 0;
+  height: 100%;
+  width: 200px; /* Adjust width as necessary */
   background-color: #333;
   color: #fff;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center; /* Center items horizontally */
 }
 
-.email-sidebar p {
-  margin: 0;
-  margin-bottom: 10px;
+.email-container {
+  writing-mode: vertical-rl; /* Display text vertically */
+  transform: rotate(0deg); /* Rotate text to display from bottom to top */
+  text-align: center; /* Center the text */
 }
 
-.email-sidebar a {
-  text-decoration: none;
+.email-container a {
   color: #fff;
+  text-decoration: none;
+  word-break: break-all; /* Break the email address if it's too long */
 }

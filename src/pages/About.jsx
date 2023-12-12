@@ -1,3 +1,4 @@
+// src/pages/About.jsx
 import { useState, useEffect } from "react";
 
 function About() {

@@ -1,34 +1,46 @@
-/* src/styles/pages.css */
-
-/* Home Page Syling */
-
+/* Define custom styles for the Home component */
 .home-container {
-  /* Add custom container styles here */
   background-color: #0a192f;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
-.home-heading {
-  /* Add custom heading styles here */
-  font-size: 28px;
-  color: #0b0fdb;
-  text-align: center;
+.custom-container {
+  background-color: #0a192f;
 }
 
-.home-paragraph {
-  /* Add custom paragraph styles here */
-  line-height: 2; /* Add line height for spacing */
-  text-align: center;
-  padding: 10px;
-  margin: auto;
+.container-fluid {
+  background-color: #0a192f;
+}
+
+.custom-heading-1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.custom-heading-2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.custom-heading-3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.custom-paragraph {
+  font-size: 1.25rem;
+  color: white;
 }
 
 /* Styling for ABOUT page */
 
 /* Container styles */
 .custom-about-container {
-  /* Add custom container styles here */
   background-color: #0a192f;
   padding: 20px;
   border-radius: 5px;
@@ -37,40 +49,34 @@
 
 /* Heading styles "About Me" */
 .custom-heading {
-  /* Add custom heading styles here */
   font-size: 28px;
   color: #0a9f2d;
 }
 
 /* List styles for skills row*/
 .custom-list {
-  /* Add custom list styles here */
   list-style-type: disc;
   margin-left: 20px;
 }
 
 /* List item styles for skills */
 .custom-list-item {
-  /* Add custom list item styles here */
   color: #f3f5fa;
 }
 
 /* Icon styles for skills items */
 .custom-icon {
-  /* Add custom icon styles here */
   font-size: 50px;
 }
 
 /* Paragraph styles */
 .custom-paragraph {
-  /* Add custom paragraph styles here */
-  line-height: 3.5; /* Add line height for spacing */
+  line-height: 3.5;
 }
 
 /* Styling for the projects page */
 
 .card-img-top {
-  /* Add custom card image styles here */
   height: 200px;
   object-fit: cover;
 }

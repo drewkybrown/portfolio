@@ -20,7 +20,7 @@ function About() {
 
   // Function to render the About page
   const loaded = () => (
-    <div className="container mt-5 custom-about-container">
+    <div className="about-container container mt-5 custom-about-container">
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <h2 className="mb-4 custom-heading">{about.name}</h2>

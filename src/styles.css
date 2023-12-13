@@ -11,66 +11,80 @@ html {
 
 /* styles.css */
 .nav-link img {
-  max-width: 40px; /* Adjust this value as needed */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 40px;
+  height: auto;
 }
 
 /* Custom styles for the GitHub logo with "jump out" effect and shadow */
 #github-logo {
-  max-width: 40px; /* Limit image size */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space between icons */
+  max-width: 40px;
+  height: auto;
+  margin-bottom: 20px;
   transition: transform 0.5s, box-shadow 0.2s, filter 0.2s;
-  filter: grayscale(100%); /* Initial grayscale effect (black and white) */
+  filter: grayscale(100%) brightness(6.5);
+  border: 2px solid white;
+  padding: 4px;
+  border-radius: 10px;
+  opacity: 1;
 }
 
 /* Apply styles on hover */
 #github-logo:hover {
-  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-  filter: grayscale(100%); /* Remove grayscale effect on hover (colorize) */
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%) brightness(12.5);
+  border: 2px solid white;
 }
 
 /* Custom styles for the Twitter logo with "jump out" effect and shadow */
 #twitter-logo {
-  max-width: 40px; /* Limit image size */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space between icons */
+  max-width: 40px;
+  height: auto;
+  margin-bottom: 20px;
   transition: transform 0.5s, box-shadow 0.2s, filter 0.2s;
-  filter: grayscale(100%); /* Initial grayscale effect (black and white) */
+  filter: grayscale(100%) brightness(4.5);
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 1;
 }
 
 /* Apply styles on hover */
 #twitter-logo:hover {
-  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-  filter: grayscale(100%); /* Remove grayscale effect on hover (colorize) */
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%) brightness(12.5);
+  border: 2px solid white;
 }
 
 /* Custom styles for the LinkedIn logo with "jump out" effect and shadow */
-/* Custom styles for the LinkedIn logo with "jump out" effect and shadow */
 #linkedin-logo {
-  max-width: 40px; /* Limit image size */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space between icons */
+  max-width: 40px;
+  height: auto;
+  margin-bottom: 20px;
   transition: transform 0.5s, box-shadow 0.2s, filter 0.2s;
-  filter: grayscale(100%); /* Initial grayscale effect (black and white) */
+  filter: grayscale(100%) brightness(4.5);
+  border: 2px solid white;
+  padding: 5px 0px 5px 5px;
+  border-radius: 10px;
+  opacity: 1;
 }
 
 /* Apply styles on hover */
 #linkedin-logo:hover {
-  transform: translateY(-5px) scale(1.1); /* Move up and scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-  filter: grayscale(100%); /* Remove grayscale effect on hover (colorize) */
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%) brightness(12.5);
+  border: 2px solid white;
 }
 
 .sidebar {
-  position: fixed; /* Fixed position */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  width: 60px; /* Set a fixed width */
-  height: 100vh; /* Full viewport height */
-  background-color: #0a192f; /* Light background, change as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #0a192f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +106,7 @@ html {
   color: #0a192f;
   font-weight: bold;
   font-size: 18px;
-  transition: color 0.5s ease; /* Smooth color transition on hover */
+  transition: color 0.5s ease;
 }
 
 /* Style the links on hover */
@@ -102,12 +116,12 @@ html {
 
 /* Style the logos */
 .sidebar img {
-  max-width: 40px; /* Limit image size */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space between icons */
+  max-width: 40px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* Style individual logos */
 .sidebar img[src*="github-mark"] {
-  border-color: #f5f0f0; /* Change border color for GitHub logo */
+  border-color: #f5f0f0;
 }

@@ -1,17 +1,17 @@
 // src/pages/Home.jsx
-import "../styles/pages.css";
+import React from "react";
+import "../styles/pages.css"; // Import your external CSS file
 import { useState, useEffect } from "react";
 
-// function to render the Home page
 function Home(props) {
   return (
     <div className="home-container">
-      <div className="p-5 mb-4 bg-light rounded-3 border">
+      <div className="custom-container">
         <div className="container-fluid py-5">
-          <h1 className="home-heading display-5 fw-bold">
-            Hi! I'm Drew, I code things for the web.
-          </h1>
-          <p className="home-paragraph col-md-8 fs-4">
+          <h3 className="custom-heading-1">Hi, my name is</h3>
+          <h1 className="custom-heading-2">Drew Brown</h1>
+          <h1 className="custom-heading-3">I build things for the web.</h1>
+          <p className="custom-paragraph col-md-8">
             I’m a software developer with a knack for backend technologies and a
             comprehensive understanding of full-stack development. My coding
             journey, ignited at General Assembly's bootcamp and enriched with my

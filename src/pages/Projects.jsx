@@ -3,19 +3,26 @@ import { useState, useEffect } from "react";
 
 function Projects(props) {
   const [projects, setProjects] = useState(null);
+  const [loading, setLoading] = useState(true); // Added loading state
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // Simulate an API request
+        await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulated delay
+
+        // Replace this with your actual data fetching logic
         const response = await fetch("/projects.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         setProjects(data);
+        setLoading(false); // Set loading to false after data is fetched
       } catch (error) {
         console.error("Fetch error:", error);
         setProjects([]);
+        setLoading(false); // Set loading to false in case of an error
       }
     };
 
@@ -52,7 +59,11 @@ function Projects(props) {
     );
   };
 
-  return projects ? loaded() : <h1>Loading...</h1>;
+  return loading ? (
+    <h1 className="loading-text text-center mt-5">Loading...</h1>
+  ) : (
+    loaded()
+  ); // conditional rendering of loading or loaded()
 }
 
 export default Projects;

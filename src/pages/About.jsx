@@ -5,17 +5,25 @@ import { useState, useEffect } from "react";
 function About() {
   // state for storing about data
   const [about, setAbout] = useState(null);
+  const [loading, setLoading] = useState(true); // Added loading state
 
   // function to fetch about data
   const getAboutData = async () => {
     const response = await fetch("./about.json");
     const data = await response.json();
     setAbout(data);
+    setLoading(false); // Set loading to false after data is fetched
   };
 
   // fetch about data on initial render
   useEffect(() => {
-    getAboutData();
+    // Simulate a brief delay before fetching data
+    const delay = setTimeout(() => {
+      getAboutData();
+    }, 1000); // Adjust the delay time as needed (in milliseconds)
+
+    // Clean up the setTimeout when the component unmounts
+    return () => clearTimeout(delay);
   }, []);
 
   // Function to render the About page
@@ -47,11 +55,11 @@ function About() {
     </div>
   );
 
-  return about ? (
-    loaded()
-  ) : (
+  return loading ? (
     <h1 className="loading-text text-center mt-5">Loading...</h1>
-  ); // conditional rendering of loaded() or loading...
+  ) : (
+    loaded()
+  ); // conditional rendering of loading or loaded()
 }
 
 export default About;

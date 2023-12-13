@@ -9,7 +9,7 @@ function Home(props) {
       <div className="custom-container">
         <div className="container-fluid py-5">
           <h3 className="custom-heading-1">Hi, my name is</h3>
-          <h1 className="custom-heading-2">Drew Brown</h1>
+          <h1 className="custom-heading-2">Drew Brown.</h1>
           <h1 className="custom-heading-3">I build things for the web.</h1>
           <p className="custom-paragraph col-md-8">
             I’m a software developer with a knack for backend technologies and a

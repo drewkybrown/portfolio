@@ -7,12 +7,12 @@ function Header() {
     <header className="header-container">
       <nav className="nav-box">
         <div className="nav-items-container">
-          <div className="nav-item">
+          <div className="nav-item-1">
             <Link to="/about" className="nav-link">
               01. About
             </Link>
           </div>
-          <div className="nav-item">
+          <div className="nav-item-2">
             <Link to="/projects" className="nav-link">
               02. Projects
             </Link>

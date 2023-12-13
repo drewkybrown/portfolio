@@ -22,28 +22,36 @@ function About() {
   const loaded = () => (
     <div className="about-container container mt-5 custom-about-container">
       <div className="row justify-content-center">
-        <div className="col-lg-8">
+        <div className="main-about-container col-lg-8">
           <h2 className="mb-4 custom-heading">{about.name}</h2>
           {about.bio.map((text, index) => {
-            return text.startsWith("-") ? (
-              <ul key={index} className="list-unstyled custom-list">
-                <li className="mb-2 custom-list-item">
+            if (text.startsWith("-")) {
+              // Render technology items in separate boxes
+              return (
+                <div key={index} className="technology-box">
                   <i className="bi bi-check-circle-fill text-primary me-2 custom-icon"></i>
                   {text.substring(1).trim()}
-                </li>
-              </ul>
-            ) : (
-              <p key={index} className="mb-3 custom-paragraph">
-                {text}
-              </p>
-            );
+                </div>
+              );
+            } else {
+              // Render other bio text as paragraphs
+              return (
+                <p key={index} className="mb-3 custom-paragraph">
+                  {text}
+                </p>
+              );
+            }
           })}
         </div>
       </div>
     </div>
   );
 
-  return about ? loaded() : <h1 className="text-center mt-5">Loading...</h1>; // conditional rendering of loaded() or loading...
+  return about ? (
+    loaded()
+  ) : (
+    <h1 className="loading-text text-center mt-5">Loading...</h1>
+  ); // conditional rendering of loaded() or loading...
 }
 
 export default About;

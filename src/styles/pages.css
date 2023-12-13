@@ -12,66 +12,92 @@
 
 .container-fluid {
   background-color: #0a192f;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .custom-heading-1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
+  font-size: 16px;
+  font-family: SF Mono;
+  color: #64ffda;
 }
 
 .custom-heading-2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
+  font-size: 80px;
+  font-weight: 600px;
+  color: #ccd6f6;
 }
 
 .custom-heading-3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
+  font-size: 80px;
+  font-weight: 600px;
+  color: #8892b0;
 }
 
 .custom-paragraph {
-  font-size: 1.25rem;
-  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  line-height: 26px !important;
+  color: #c4cada;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 /* Styling for ABOUT page */
+
+.main-about-container {
+  display: border-box;
+}
 
 /* Container styles */
 .custom-about-container {
   background-color: #0a192f;
   padding: 20px;
   border-radius: 5px;
-  color: white;
+  color: rgb(247, 245, 245);
 }
 
 /* Heading styles "About Me" */
 .custom-heading {
   font-size: 28px;
-  color: #0a9f2d;
+  color: #63ffda;
+  text-align: left;
+}
+/* Styles for technology items */
+.technology-box {
+  font-family: "Courier New", Courier, monospace;
+  border: 0.2px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 200px;
+  margin-left: 150px; /* Centers the box */
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+  color: #63ffda;
 }
 
-/* List styles for skills row*/
-.custom-list {
-  list-style-type: disc;
-  margin-left: 20px;
+/* Styles for other parts of the bio */
+.custom-paragraph {
+  /* Add any specific styles for your paragraphs here */
 }
 
-/* List item styles for skills */
-.custom-list-item {
-  color: #f3f5fa;
-}
-
-/* Icon styles for skills items */
+/* Icon styles for skills items (if needed) */
 .custom-icon {
-  font-size: 50px;
+  font-size: 20px; /* Adjusts the icon size */
 }
 
 /* Paragraph styles */
 .custom-paragraph {
-  line-height: 3.5;
+  line-height: 1.5;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.loading-text {
+  color: #63ffda;
 }
 
 /* Styling for the projects page */

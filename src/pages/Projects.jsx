@@ -37,10 +37,10 @@ function Projects(props) {
                 <div className="card-body">
                   <h5 className="card-title">{project.name}</h5>
                   <p className="card-text">{project.description}</p>
-                  <a href={project.git} className="btn btn-primary">
+                  <a href={project.git} className="github-btn btn btn-primary">
                     Github
                   </a>
-                  <a href={project.live} className="btn btn-secondary">
+                  <a href={project.live} className="live-btn btn btn-secondary">
                     Live Site
                   </a>
                 </div>

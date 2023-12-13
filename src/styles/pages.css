@@ -51,7 +51,7 @@
   display: border-box;
 }
 
-/* Container styles */
+/* Container styles for About me */
 .custom-about-container {
   background-color: #0a192f;
   padding: 20px;
@@ -80,9 +80,6 @@
 }
 
 /* Styles for other parts of the bio */
-.custom-paragraph {
-  /* Add any specific styles for your paragraphs here */
-}
 
 /* Icon styles for skills items (if needed) */
 .custom-icon {
@@ -105,4 +102,39 @@
 .card-img-top {
   height: 200px;
   object-fit: cover;
+  border: #fdfbfb 1px solid;
+}
+
+.card-body {
+  background-color: #8896af;
+  color: #a1a9c2;
+  border: #fdfbfb 1px solid;
+}
+
+.card-title {
+  color: white;
+}
+
+.github-btn {
+  background-color: #0a192f;
+  color: #f5f6f8 !important;
+  border: #64ffda 1px solid !important;
+  margin-right: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.github-btn:hover {
+  background-color: #000000; /* Change "new-color" to the color you want on hover */
+}
+
+.live-btn {
+  background-color: #0a192f;
+  color: white !important;
+  border: #64ffda 1px solid !important;
+  margin-left: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.live-btn:hover {
+  background-color: #000000; /* Change "new-color" to the color you want on hover */
 }

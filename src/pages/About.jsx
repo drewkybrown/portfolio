@@ -30,11 +30,11 @@ function About() {
   const loaded = () => (
     <div className="about-container container mt-5 custom-about-container">
       <div className="row justify-content-center">
-        <div className="main-about-container col-lg-8">
+        {/* Bio Column */}
+        <div className="col-lg-6">
           <h2 className="mb-4 custom-heading">{about.name}</h2>
           {about.bio.map((text, index) => {
             if (text.startsWith("-")) {
-              // Render technology items in separate boxes
               return (
                 <div key={index} className="technology-box">
                   <i className="bi bi-check-circle-fill text-primary me-2 custom-icon"></i>
@@ -42,7 +42,6 @@ function About() {
                 </div>
               );
             } else {
-              // Render other bio text as paragraphs
               return (
                 <p key={index} className="mb-3 custom-paragraph">
                   {text}
@@ -50,6 +49,14 @@ function About() {
               );
             }
           })}
+        </div>
+        {/* Image Column */}
+        <div className="profile-box col-lg-6 d-flex align-items-center">
+          <img
+            src="/IMG_2226.JPG"
+            alt="Your Name"
+            className="profile-pic img-fluid"
+          />
         </div>
       </div>
     </div>

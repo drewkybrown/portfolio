@@ -48,9 +48,8 @@
   line-height: 26px !important;
 
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+
+  width: 120%;
   line-height: 1.5;
   margin-left: 0;
   padding-left: 0;
@@ -60,6 +59,8 @@
 
 .main-about-container {
   display: border-box;
+  width: 600px;
+  margin-right: 300px;
 }
 
 /* Container styles for About me */
@@ -84,10 +85,18 @@
   margin-bottom: 10px;
   border-radius: 5px;
   max-width: 200px;
-  margin-left: 150px; /* Centers the box */
+  margin-left: 200px; /* Centers the box */
   margin-right: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
   color: #63ffda;
+}
+
+/* Styles for Profile Picture */
+.profile-pic {
+  width: 250px;
+  height: auto;
+  margin-bottom: 500px;
+  margin-left: 200px;
 }
 
 /* Styles for other parts of the bio */

@@ -10,5 +10,12 @@
       "live": "https://drewkybrown.github.io/Trivia-Game/",
       "git": "https://github.com/drewkybrown/Trivia-Game",
       "image": "/Wireframe.trivia.png"
+    },
+
+    {
+      "name": "Weather Watcher",
+      "live": "https://resilient-longma-d4ec33.netlify.app/",
+      "git": "https://github.com/drewkybrown/weather-watcher/tree/v2",
+      "image": "/day.jpg"
     }
   ]

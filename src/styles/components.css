@@ -1,43 +1,9 @@
-/* Email sidebar styling */
-
-.email-sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 60px;
-  background-color: #0a192f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.email-container {
-  writing-mode: vertical-rl;
-  position: fixed;
-  text-align: center;
-  background-color: #0a192f;
-}
-
-.email-container a {
-  text-decoration: none;
-  word-break: break-all;
-  color: white;
-  transition: transform 0.5s;
-}
-
-.email-container a:hover {
-  transform: translateY(-5px) scale(1.1);
-}
-
 /* Style for the entire header */
 .header-container {
   background-color: #0a192f;
   color: white;
   font-family: "sf mono";
 }
-
-/* email text styling */
 
 .nav-box {
   display: flex;
@@ -47,11 +13,13 @@
 
 .nav-items-container {
   display: flex;
+  margin-right: 80px;
 }
 
 .nav-item-1,
 .nav-item-2 {
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 50px;
   color: #64ffda;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow for 3D effect */
@@ -98,25 +66,59 @@
   background-color: #000000;
 }
 
-/* Custom styles for the "Resume" button with "jump out" effect and shadow */
+/* Email sidebar styling */
+.email-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 60px;
+  background-color: #0a192f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Adjust content to start and end of the container */
+  padding: 20px 0; /* Add padding at top and bottom */
+}
+
+/* Adjusted to ensure email text is vertical and at the bottom */
+.email-container {
+  writing-mode: vertical-rl;
+  transform: rotate(360deg); /* Correct orientation */
+  color: white; /* Ensure email text color is white */
+  margin-bottom: 300px;
+}
+
+.email-container a {
+  text-decoration: none;
+  color: white; /* Reiterated to ensure color consistency */
+  transition: transform 0.5s;
+}
+
+.email-container a:hover {
+  transform: translateY(5px) scale(1.1);
+}
+
+/* Resume button styling */
 .custom-resume-button {
   font-family: "sf mono";
-  position: absolute;
-  top: 20px;
-  right: 80px;
-  padding: 10px;
-  background-color: #0a192f;
+  background-color: #112240; /* Slightly different for contrast */
   color: #64ffda;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-top: 0px;
+  margin-right: 80px;
   border: 1px solid #64ffda;
   border-radius: 10px;
-  cursor: pointer;
   text-decoration: none;
-  transition: transform 0.5s, box-shadow 0.2s, background-color 0.2s;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: transform 0.5s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .custom-resume-button:hover {
+  background-color: #0c2238;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  background-color: #000000;
 }

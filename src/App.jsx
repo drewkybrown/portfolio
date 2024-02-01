@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import EmailSidebar from "./components/EmailSidebar";
 import HomeButton from "./components/HomeButton";
-import ResumeButton from "./components/ResumeButton";
+// import ResumeButton from "./components/ResumeButton";
 
 // Import pages
 import Home from "./pages/Home";
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <ResumeButton />
+      {/* <ResumeButton /> */}
       <HomeButton />
       <Header />
       <EmailSidebar />
